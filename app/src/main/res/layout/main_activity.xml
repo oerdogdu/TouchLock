@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_main"/>
+
+        </FrameLayout>
+
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TabLayout
+            android:id="@+id/mTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/group_tab_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find A House"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/group_tab_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Become A Host"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/group_tab_meals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"/>
+        </TabLayout>
+    </LinearLayout>
+</RelativeLayout>

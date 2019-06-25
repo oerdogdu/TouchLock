@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Features"
+        android:textSize="23sp"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height= "2dp"
+        android:background="@android:color/black"/>
+
+
+    <EditText
+        android:id="@+id/etRoom"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnSpan="2"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#000"
+        android:backgroundTint="#000"
+        android:hint="Number Of Room"
+        android:inputType="number"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/etBathroom"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnSpan="2"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#000"
+        android:backgroundTint="#000"
+        android:hint="Number Of Bathroom"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etBed"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnSpan="2"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#000"
+        android:backgroundTint="#000"
+        android:hint="Number Of Bed"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descTitle"
+        android:layout_width="wrap_content"
+        android:text="Description:   "
+        android:textSize="21dp"
+        android:textStyle="bold"
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="21dp"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/SplitLine_hor2"
+        android:layout_width="110dp"
+        android:layout_marginLeft="21dp"
+        android:layout_height= "2dp"
+        android:background="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_height="wrap_content"
+        android:layout_width="340dp"
+        android:maxLines="5"
+        android:lines="5"
+        android:textColor="#fff"
+        android:gravity="top"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="11dp"
+        android:background="#808080"/>
+
+
+    <ImageView
+        android:id="@+id/doneButton"
+        android:background="@android:color/transparent"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/baseline_done_black_48dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginLeft="279dp"/>
+
+</LinearLayout>

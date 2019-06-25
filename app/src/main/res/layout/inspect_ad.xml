@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp">
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:autoPlay="false"
+                app:strokeWidth="1dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carouselView"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="30dp">
+
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cityName"
+                        android:text="Antalya"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="12dp"
+                        android:textSize="29sp"
+                        android:fontFamily="sans-serif-black"/>
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cityName"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="35dp"
+                        android:text="80 TL"
+                        android:textSize="25sp"
+                        android:fontFamily="sans-serif-black"/>
+
+                    <TextView
+                        android:id="@+id/adType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/price"
+                        android:layout_marginTop="8dp"
+                        android:textSize="22sp"
+                        android:text="Single Room"
+                        android:layout_marginStart="25dp"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkInDate"
+                    android:layout_below="@+id/adType"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18sp"
+                    android:text="19/02/2018"
+                    android:layout_marginStart="25dp"
+                    android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/checkOutDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/adType"
+                        android:layout_toRightOf="@+id/checkInDate"
+                        android:layout_marginTop="8dp"
+                        android:textSize="18sp"
+                        android:text="19/02/2018"
+                        android:layout_marginStart="18dp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:id="@+id/SplitLine_hor2"
+                        android:layout_width="265dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height= "2dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@android:color/black"
+                        android:layout_below="@+id/checkInDate"/>
+
+                    <TextView
+                        android:id="@+id/addressLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SplitLine_hor2"
+                        android:layout_marginTop="10dp"
+                        android:textSize="22sp"
+                        android:text="Address"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:id="@+id/SplitLine_hor4"
+                        android:layout_width="95dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height= "2dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@android:color/black"
+                        android:layout_below="@+id/addressLabel"/>
+
+                    <TextView
+                        android:id="@+id/addressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SplitLine_hor4"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="19/02/2018"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"/>
+0
+                    <TextView
+                        android:id="@+id/descLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addressText"
+                        android:layout_marginTop="10dp"
+                        android:textSize="22sp"
+                        android:text="Description"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:id="@+id/SplitLine_hor6"
+                        android:layout_width="119dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height= "2dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@android:color/black"
+                        android:layout_below="@+id/descLabel"/>
+
+                    <TextView
+                        android:id="@+id/descText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SplitLine_hor6"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="19/02/2018"
+                        android:layout_marginStart="15dp"
+                        android:textStyle="bold"/>
+
+
+
+                    <View
+                        android:id="@+id/SplitLine_hor8"
+                        android:layout_width="265dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height= "2dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@android:color/black"
+                        android:layout_below="@+id/descText"/>
+
+                    <LinearLayout
+                        android:id="@+id/horLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/SplitLine_hor8">
+
+
+                        <TextView
+                            android:id="@+id/minDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/SplitLine_hor8"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:text="Min Day: "
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:id="@+id/minDayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:text="4"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/horLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/horLayout">
+
+
+                        <TextView
+                            android:id="@+id/numRoom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/SplitLine_hor8"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:text="Number Of Room "
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:id="@+id/numRoomText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:text="4"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/horLayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/horLayout2">
+
+                        <TextView
+                            android:id="@+id/numBathroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/SplitLine_hor8"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:text="Number Of Bathroom "
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:id="@+id/numBathroomText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:text="4"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/horLayout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/horLayout3">
+
+                        <TextView
+                            android:id="@+id/numBed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/SplitLine_hor8"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:text="Number Of Bed "
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"/>
+
+
+                        <TextView
+                            android:id="@+id/numBedText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textSize="20sp"
+                            android:text="4"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/SplitLine_hor5"
+                        android:layout_width="265dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height= "2dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@android:color/black"
+                        android:layout_below="@+id/horLayout4"/>
+
+
+                    <TextView
+                        android:id="@+id/adUtilities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SplitLine_hor5"
+                        android:layout_marginTop="10dp"
+                        android:textSize="22sp"
+                        android:text="19/02/2018"
+                        android:layout_marginStart="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabDeleteAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="31dp"
+                android:layout_marginBottom="27dp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/cardAd"
+                android:clickable="true"
+                android:background="@android:color/black"
+                android:scaleType="fitXY"
+                android:backgroundTint="@android:color/white"
+                android:src="@drawable/baseline_done_black_48dp"
+                app:fabCustomSize="58dp"
+                app:maxImageSize="58dp" />
+
+        </RelativeLayout>
+    </ScrollView>

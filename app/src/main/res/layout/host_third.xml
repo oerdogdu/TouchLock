@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ls="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facilities"
+        android:textSize="23sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height= "2dp"
+        android:background="@android:color/black"/>
+
+    <CheckBox
+        android:id="@+id/cbWifi"
+        android:layout_width="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Wifi"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:textSize="20sp"
+        android:layout_marginTop="29dp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbAir"
+        android:layout_width="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Air Conditioner"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"/>
+
+    <CheckBox
+    android:id="@+id/cbTv"
+    android:layout_width="220dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:text="Television"
+    android:button="@null"
+    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+    android:textSize="20sp"
+    android:layout_marginTop="12dp"
+    android:padding="10dp"/>
+
+    <CheckBox
+    android:id="@+id/cbPet"
+    android:layout_width="220dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:text="Pet Allowed"
+    android:button="@null"
+    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+    android:textSize="20sp"
+    android:layout_marginTop="12dp"
+    android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbBasic"
+        android:layout_width="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Basic Needs (Towel, Shampoo)"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cbFire"
+        android:layout_width="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Fire Extinguisher"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/nextButton"
+        android:background="@android:color/transparent"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:src="@drawable/nexticon"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="259dp"/>
+
+</LinearLayout>

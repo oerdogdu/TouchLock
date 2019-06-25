@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ls="http://schemas.android.com/apk/res-auto">
+
+
+    <fragment android:id="@+id/autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment" />
+
+    <EditText
+        android:id="@+id/etCounty"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_columnSpan="2"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#000"
+        android:backgroundTint="#000"
+        android:layout_below="@id/autocomplete_fragment"
+        android:hint="Country"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/checkInLabel"
+        android:layout_width="190dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/etCounty"
+        android:text="Check-In Date"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"/>
+
+
+
+    <TextView
+    android:id="@+id/checkInText"
+    android:layout_width="150dp"
+        android:textAlignment="center"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginTop="18dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/checkInLabel"
+    android:text="Tap to Select"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginStart="25dp"
+    android:background="@drawable/gradient_spinner"/>
+
+
+    <TextView
+        android:id="@+id/houseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_below="@id/checkInText"
+        android:layout_centerHorizontal="true"
+        android:text="House Type"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="42dp" />
+
+    <View
+        android:id="@+id/SplitLine_hor1"
+        android:layout_width="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height= "2dp"
+        android:layout_below="@id/houseLabel"
+        android:background="@android:color/black"
+        android:layout_marginTop="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/houseGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/SplitLine_hor1"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/rbFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full House"
+            android:textSize="18sp"
+            android:layout_marginEnd="55dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Room"
+            android:textSize="18sp"/>
+
+    </RadioGroup>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/searchButton"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/oval_button"
+        android:layout_below="@id/houseGroup"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:fontFamily="monospace"
+        android:layout_centerHorizontal="true"
+        android:text="Search" />
+
+</RelativeLayout>

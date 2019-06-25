@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bakcground2">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appDisplayName"
+        android:layout_marginTop="86dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="55sp"
+        android:fontFamily="cursive"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal"
+            android:textColorHint="#fff"
+            app:hintTextAppearance="@style/HintLabel"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="@string/email"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/email"
+                android:drawableLeft="@drawable/email"
+                android:textColor="#fff"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#fff"
+                app:hintTextAppearance="@style/HintLabel"
+                android:backgroundTint="#fff"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameInputLayout"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center_horizontal"
+            android:textColorHint="#fff"
+            app:hintTextAppearance="@style/HintLabel"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:hint="@string/fullname"
+                android:drawablePadding="12dp"
+                android:singleLine="true"
+                android:drawableStart="@drawable/email"
+                android:drawableLeft="@drawable/email"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                app:hintTextAppearance="@style/HintLabel"
+                android:backgroundTint="#fff"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textColorHint="#fff"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/HintLabel"
+            android:backgroundTint="#fff"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#fff"
+                android:drawableStart="@drawable/password"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="12dp"
+                android:layout_marginTop="22dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                app:hintTextAppearance="@style/HintLabel" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/confirmPasswordInputLayout"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textColorHint="#fff"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/HintLabel"
+            android:backgroundTint="#fff"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/confirmET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#fff"
+                android:textColor="#fff"
+                android:drawableStart="@drawable/password"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="12dp"
+                android:hint="@string/passwordConfirm"
+                android:inputType="textPassword"
+                android:textColorHint="#fff"
+                app:hintTextAppearance="@style/HintLabel" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/registerButton"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/oval_button"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/signup" />
+    </LinearLayout>
+    
+</RelativeLayout>

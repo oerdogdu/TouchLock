@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TouchLock</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Logın</string>
+    <string name="signup">Sıgn Up</string>
+    <string name="fullname">Full Name</string>
+    <string name="passwordConfirm">Confirm Password</string>
+    <string name="checkInDateString">Check-In Date</string>
+    <string name="checkOutDateString">Check-Out Date</string>
+    <string name="appDisplayName">Touch&amp;Lock</string>
+    <string name="numberOfPeople">Number Of People</string>
+    <string name="strCity">City</string>
+    <string name="strCountry">Country</string>
+    <string name="confirm_title">Confirm</string>
+    <string name="confirm_message">Are You Sure You Want To Advertise This House</string>
+    <string name="confirm_delete">Are You Sure You Want To Delete This Ad</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="button_cancel">Cancel</string>
+
+    <string-array name="country_array">
+        <item>Turkey</item>
+    </string-array>
+
+    <string-array name="city_array">
+        <item>Antalya</item>
+        <item>Ankara</item>
+        <item>Istanbul</item>
+        <item>Izmir</item>
+    </string-array>
+
+    <string-array name="currency_array">
+        <item>TL</item>
+        <item>Dollar</item>
+        <item>Euro</item>
+    </string-array>
+</resources>

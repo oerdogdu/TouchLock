@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="13dp"
+        android:elevation="13dp"
+        android:background="@drawable/rounded_row">
+
+        <LinearLayout android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginRight="5dip">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:elevation="18dp"
+                android:id="@+id/view2"
+                app:cardCornerRadius="30dp"
+                android:layout_centerHorizontal="true"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9">
+                <ImageView
+                    android:layout_height="60dp"
+                    android:layout_width="60dp"
+                    android:id="@+id/ad_image"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/house_holder">
+                </ImageView>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ad_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Ad"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:typeface="sans" />
+
+        <View
+            android:id="@+id/SplitLine_hor3"
+            android:layout_width="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height= "2dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_marginStart="22dp"
+            android:layout_below="@+id/ad_title"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/ad_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Antalya"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="22dp"
+            android:layout_below="@+id/ad_title"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/ad_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80 TL"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="22dp"
+            android:layout_below="@+id/ad_title"
+            android:layout_toRightOf="@+id/ad_city"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+</LinearLayout>

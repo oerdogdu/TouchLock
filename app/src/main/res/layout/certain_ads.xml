@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp">
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="280dp"
+                android:layout_height="180dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:autoPlay="false"
+                app:strokeWidth="1dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carouselView"
+                android:layout_marginTop="3dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="30dp">
+
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cityName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Antalya"
+                        android:textSize="29sp" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/cityName"
+                        android:fontFamily="sans-serif-black"
+                        android:text="80 TL"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/adType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/price"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Single Room"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/checkInDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/adType"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="8dp"
+                        android:text="19/02/2018"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/checkOutDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/adType"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/checkInDate"
+                        android:text="19/02/2018"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/SplitLine_hor2"
+                        android:layout_width="265dp"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/checkInDate"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:background="@android:color/black" />
+
+
+                    <TextView
+                        android:id="@+id/adUtilities"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SplitLine_hor2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:text="19/02/2018"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/SplitLine_hor3"
+                        android:layout_width="265dp"
+                        android:layout_height="2dp"
+                        android:layout_below="@+id/adUtilities"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:background="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/cityText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SplitLine_hor3"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:text="19/02/2018"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabDeleteAd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="31dp"
+                android:layout_marginBottom="27dp"
+                android:layout_marginTop="478dp"
+                android:clickable="true"
+                android:background="@android:color/black"
+                android:scaleType="fitXY"
+                android:backgroundTint="@android:color/white"
+                android:src="@drawable/baseline_delete_black_24dp"
+                app:fabCustomSize="58dp"
+                app:maxImageSize="58dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
